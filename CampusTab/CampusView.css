@@ -1,0 +1,99 @@
+
+  
+  
+
+.campusview-main{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    height: 200px;
+  
+ 
+}
+
+.campusview-img {
+    display: inline-block;
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+    float: left;
+}
+
+.campusview-info {
+    display: inline-block;
+    padding: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.campusview-title {
+
+    margin-left: 4.5rem;
+    margin-top: 2rem;
+
+    color: goldenrod;
+    font-size: 25pt;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    
+    
+}
+
+.campusview-bio {
+    
+    margin-left: 3.7rem;
+    
+    color: goldenrod;
+    font-size: 10pt;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* .campusview-actionbar {
+    margin: 0 20px;
+    height: 50px;
+    width: 640px;
+ 
+} */
+
+
+
+/* .campusview-actions {
+    margin: 10px 30px;
+    display: inline-block;
+    float: left;
+} */
+
+.campusview-button {
+  margin-left: 28rem;
+    background-color: #000;
+    color: goldenrod;
+    border: none;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.campusview-buttons:hover{
+    background-color: darkred;
+    border-radius: 0.5rem;
+}
+
+.btn-remove:hover{
+    background-color: darkred;
+    border-radius: 0.5rem;
+}
+
+/* .campusview-students {
+    width: 640px;
+    background: rgba(29, 37, 49, 0.5);
+    margin: 20px 20px 0 20px;
+    padding-top: 5px;
+}
+
+.studentgrid-title {
+    margin: 10px 20px 0 20px;
+    text-decoration: none;
+} */
+

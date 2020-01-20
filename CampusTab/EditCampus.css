@@ -1,0 +1,36 @@
+.EditCampus{
+  padding-top: 8rem;
+    margin-left: 30%;
+    height: 40vh;
+    width: 35vw;
+   
+  
+}
+
+.campus-addform-button {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 40rem;
+    margin-top: -10rem;
+    background: rgba(236, 244, 255, 0);
+    color: red;
+    border: none;
+    padding: 30px;
+
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 12pt;
+}
+
+
+
+.campus-addform-input {
+    text-decoration: none;
+      
+   }
+
+   .studentGridView {
+
+    margin-top: 10rem ; 
+       
+       
+   }

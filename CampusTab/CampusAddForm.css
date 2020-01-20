@@ -1,0 +1,64 @@
+.CampusAddForm{
+    padding-top: 15%;
+  
+    margin-left: 37%;
+    height: 50vh;
+    width: 35vw;
+   
+  
+}
+
+.campus-addform-element {
+   padding-top: 10px;
+    font-size: 40pt;
+    background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+}
+
+.campus-addform-label {
+  margin-left: 30px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 20pt;
+  
+}
+
+.campus-addform-input {
+ 
+    font-size: 20pt;
+    margin-left: 50px;
+    border: none;
+    border-bottom: 1px solid goldenrod;
+    background: transparent;
+    outline: none;
+    color: goldenrod;
+    width: 300px;
+    border-radius: 0%;
+    text-decoration: underline;
+    
+   
+  
+   
+}
+
+.campus-addform-button {
+    margin-left: 70%;
+   margin-top: -2rem;
+    background: rgba(236, 244, 255, 0);
+    color: black;
+    border: none;
+
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 12pt;
+}
+
+.color-red {
+    color: #cf8484;
+    padding: 10px;
+    text-shadow: 1px 1px rgba(207, 132, 132, 0.2);
+}
+
+#addCampus{
+    height: 100vh;
+    background: url("../../assets/dining.jpg") no-repeat center center/cover fixed;
+}
