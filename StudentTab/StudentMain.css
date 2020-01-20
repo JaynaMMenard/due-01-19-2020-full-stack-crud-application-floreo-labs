@@ -1,0 +1,18 @@
+.student-nav-element {
+  
+  margin-top: 15rem;
+  color: goldenrod;
+  text-decoration: none;
+  font-size: 20pt;
+  font-weight: bold;
+  float: right;
+  margin-right: 30rem;
+  padding: 0 1px;
+}
+.student-nav-element:hover {
+background-color: goldenrod;
+color: #000000;
+border-radius: 0.5rem;
+}
+
+
