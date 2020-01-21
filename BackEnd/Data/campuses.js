@@ -4,26 +4,26 @@ let campuses = [
 	{
 		name: "Gryffindor",
 		bio: "Knowledge guides our instincts.",
-		address: "123 Main St",
+		address: "North House Hallway",
 		img: "https://wallpaperaccess.com/full/864828.jpg"},
 	{
 		name: "Ravenclaw",
 		bio: "Knowledge comes first.",
-		address: "456 Main St",
+		address: "West RavenClaw Tower",
 		img: "https://www.itl.cat/pngfile/big/28-285518_ravenclaw-crest.jpg"
 	},
 
 	{
 		name: "Hufflepuff",
 		bio: "Knowledge is gained through hard work.",
-		address: "456 Main St",
+		address: "South of Black Lake",
 		img: "https://cdn.wallpapersafari.com/63/74/iKtdkm.jpg"
 	},
 
 	{
 		name: "Slytherin",
-		bio: "Knowledge is power.",
-		address: "456 Main St",
+		bio: "",
+		address: "East of Slytherin Dungeon",
 		img: "https://cdn.wallpapersafari.com/9/30/WwGkUu.jpg"
 	}
 ];
