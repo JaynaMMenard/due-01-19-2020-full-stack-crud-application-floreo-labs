@@ -1,0 +1,50 @@
+.CampusAddForm{
+    /* padding-top: 10px;
+    margin: 10px;
+    width: 350px; */
+  
+}
+
+.campus-addform-element {
+/* 
+    float: right;
+    margin: 10px; */
+}
+
+.campus-addform-label {
+    margin: 5px;
+    color: goldenrod;
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 12pt;
+  
+}
+
+.campus-addform-input {
+   
+    
+    background: none;
+    color: goldenrod;
+    width: 100px;
+    padding: 0 20px;
+    border:none;
+    
+   
+  
+    font-size: 10pt;
+}
+
+.campus-addform-button {
+    padding: 10px;
+    background: rgba(236, 244, 255, 0);
+    color: goldenrod;
+    border: none;
+
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 12pt;
+}
+
+.color-red {
+    color: #cf8484;
+    padding: 10px;
+    text-shadow: 1px 1px rgba(207, 132, 132, 0.2);
+}

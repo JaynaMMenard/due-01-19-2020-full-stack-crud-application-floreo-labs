@@ -1,0 +1,31 @@
+/* .campus-main {
+    width: 750px;
+    background: rgba(0, 0, 0, 0.1);
+   
+} */
+
+.campus-nav {
+    height: 42px;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.campus-nav-element {
+    margin-top: 10rem;
+    float: right;
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: bold;
+    color:goldenrod;
+}
+.campus-nav-element:hover {
+    background-color:goldenrod;
+    color: #000;
+    border-radius: 0.5rem;
+}
+
+.campus-grid {
+   
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
