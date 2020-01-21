@@ -1,0 +1,28 @@
+
+.student-nav{
+  height: 100%;
+  margin-top: 1rem;
+}
+.student-nav-element {
+   
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-left: 80rem;
+   
+
+   
+}
+.student-nav-element:hover {
+  background-color: goldenrod;
+  color: #000000;
+  border-radius: 0.5rem;
+}
+
+#bg_2{
+  width: 300vh;
+  height:150vh;
+  background: url("../../assets/sepia.jpg")no-repeat center center/cover fixed;
+}
+

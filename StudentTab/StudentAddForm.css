@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap');
+
+
+
+#StudentAddForm{
+ height:100vh;
+width:200vh;
+background:url("../../assets/Oath.jpg") no-repeat center center/cover;
+
+}
+
+.student-addform-element {
+    padding-top: 15rem;
+    margin-left: 30rem;
+}
+
+.student-addform-label {
+ font-family: 'Pinyon Script', cursive;
+    color: darkred;
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.student-addform-input {
+   
+    color: #84a2cf;
+    width: 100px;
+    margin: 0 5px;
+    padding: 0 20px;
+    border:none;
+    border-bottom: 1px solid #84a2cf;
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    box-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 10pt;
+}
+
+.student-addform-button {
+    margin-left: 40rem;
+    color: white;
+    text-decoration: none;
+    border: none;
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 12pt;
+}
