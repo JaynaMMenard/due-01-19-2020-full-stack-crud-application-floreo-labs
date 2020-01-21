@@ -1,0 +1,11 @@
+.campus-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 30vh;
+    padding-top: 32vh;
+    margin-left: 40rem;
+   
+    
+}

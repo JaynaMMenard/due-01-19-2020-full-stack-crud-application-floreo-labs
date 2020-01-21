@@ -8,8 +8,7 @@ let students = [
 
 ];
 
-//this value will be used to assign an ID to new students.
-//after each student addition, this value increments, and its value never derceases
+
 let curStudentId = 1;
 
 

@@ -34,7 +34,7 @@ class StudentAddForm extends Component {
                 name: e.target.elements.name.value,
                 img: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49320/preview.svg'
             }
-            let url ='http://localhost:5000/api/students';
+            let url ='http://localhost:3001/api/students';
             await axios.post(url,{
                 name: student.name,
                 img: student.img
@@ -52,11 +52,11 @@ class StudentAddForm extends Component {
     render() {
         if (!this.state.redirect) {
             return (
-              <div className="StudentAddForm">
+              <div id="StudentAddForm">
                 <form className="student-addform" onSubmit={this.addStudent}>
                   <div className="student-addform-element">
                     <label className="student-addform-label">
-                      Name:
+                      Signature:
                       <input className="campus-addform-input" type="text" name="name" />
                     </label>
                   </div>

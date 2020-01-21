@@ -6,14 +6,13 @@ import {Link} from "react-router-dom";
 class CampusMain extends React.Component {
     render() {
         return (
-            <div>
-              <div className="campus-main">
+            <div id="bg_1">
+            
                 <div className="campus-nav">
-                 
                   <Link to="/campusAddForm" className="campus-nav-element">Add Campus</Link>
                 </div>
                 <CampusGrid campuses={this.props.campuses}/>
-              </div>
+             
             </div>
         );
     }

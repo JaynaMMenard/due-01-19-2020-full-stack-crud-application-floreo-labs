@@ -56,7 +56,7 @@ class CampusAddForm extends React.Component {
 
         if (correctName && correctAddress){
 			console.log(this.state.id);
-            let url ='http://localhost:5000/api/campuses';
+            let url ='http://localhost:3001/api/campuses';
 			console.log(url);
 			console.log(this.props.campuses);
             await axios.post(url,{
@@ -91,6 +91,7 @@ class CampusAddForm extends React.Component {
 	render() {
 		if (!this.state.redirect) {
 			return (
+				<div id="addCampus">
 			  <div className="CampusAddForm">
 				<form className="campus-addform" onSubmit={this.addCampus}>
 				  <div className="campus-addform-element">
@@ -131,6 +132,7 @@ class CampusAddForm extends React.Component {
 					  "" :
 					  "Address must not be empty, and can consist only of letters, numbers, and spaces"}
 				</div>
+			  </div>
 			  </div>
 			);
 		} else {

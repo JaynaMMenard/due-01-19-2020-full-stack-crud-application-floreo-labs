@@ -69,9 +69,9 @@ class EditStudent extends Component {
             gpaIsCorrect: correctGPA
         })
         if (correctName && correctGPA){
-            //this.props.editStudent(this.state)
+            this.props.editStudent(this.state)
             console.log(this.state.id);
-            let url ='http://localhost:5000/api/students/' + this.state.id;
+            let url ='http://localhost:3001/api/students/' + this.state.id;
             console.log(url);
             const that = this;
             console.log(that.state);
@@ -82,7 +82,7 @@ class EditStudent extends Component {
                 campus: this.state.campusId
             })
             .then (res => {
-                //let singleStudent = res.body
+                let singleStudent = res.body
                 this.props.editStudent(that.state);
             })
             .catch(err => console.log(err));
@@ -125,10 +125,11 @@ class EditStudent extends Component {
                           <option className="campus-addform-button student-btns" value={campus.id}>{campus.name}</option>
                       ))}
                     </select>
-				    <button className="student-addform-button student-btns">Save Changes</button>
+                    
+				    <button className="student-btns">Save Changes</button>
 				  </div>
                 </form>
-                <div className="campus-addform-label color-red">
+                <div className="campus-addform-label ">
                   <div>
                     {this.state.nameIsCorrect ? 
                         "" :

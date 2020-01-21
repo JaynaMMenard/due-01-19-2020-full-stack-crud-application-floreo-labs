@@ -8,6 +8,7 @@ import {addCampus} from '../../actions'
 import EditCampusStudentGrid from './EditCampusStudentGrid'
 import {Redirect} from 'react-router'
 import axios from 'axios'
+import './EditCampus.css'; 
 
 
 class EditCampus extends Component {
@@ -40,7 +41,7 @@ class EditCampus extends Component {
     
     async getCampuses(){
         await this.props.emptyCampus();
-        await axios.get('http://localhost:5000/api/campuses')
+        await axios.get('http://localhost:3001/api/campuses')
         .then(response => {
             let result = response.data;
                 for (let i = 0; i < result.length; i++){
@@ -98,31 +99,21 @@ class EditCampus extends Component {
         for (let i = 0; i < this.props.students.length; i++) {
             if (id_ == this.props.students[i].id) {
                 student = this.props.students[i];
-                // console.log("FOUND STUDENT")
-                // console.log(student)
+                   console.log(student)
             }
         }
 
         if (student) {
-            // console.log(student);
-            // console.log(this.props.campus.id);
+            console.log(student);
+            console.log(this.props.campus.id);
             student.campusId = this.props.campus.id;
-            // console.log(student);
+            console.log(student);
             this.props.editStudent(student);
         }
 
         console.log(this.state.selection != '')
         if(this.state.selection != '')
-        {
-            // let stud;
-            // for(let i = 0 ; i < this.props.students.size(); i++)
-            // {
-            //     if(this.props.students[i].id == this.state.selection)
-            //     {
-            //         stud = this.props.students[i];
-            //         break;
-            //     }
-            // }
+        {  
             let response = {
                 name: student.name,
                 gpa: student.gpa,
@@ -131,12 +122,12 @@ class EditCampus extends Component {
             }
             
             console.log(response)
-            await axios.put('http://localhost:5000/api/students/' + this.state.selection, response)
+            await axios.put('http://localhost:3001/api/students/' + this.state.selection, response)
             .catch(err => console.log(err))
         }
 
         if (correctName && correctAddress){
-            //this.props.editStudent(this.state)
+           
             let response = {
                 name: this.state.name,
                 bio : this.state.bio,
@@ -144,7 +135,7 @@ class EditCampus extends Component {
                 img: this.state.img
             };
             
-            let url ='http://localhost:5000/api/campuses/' + this.state.id;
+            let url ='http://localhost:3001/api/campuses/' + this.state.id;
             const that = this;
             await axios.put(url,response)
             .then(() => that.setState({redirect: true}))
@@ -163,6 +154,7 @@ class EditCampus extends Component {
             )
         }
         return (
+            <div id ="editBg">
              <div className="EditCampus">
             	<form className="campus-addform" onSubmit={this.onSubmitHandler}>
 				  <div className="campus-addform-element">
@@ -189,15 +181,16 @@ class EditCampus extends Component {
 					  <input className="campus-addform-input" name="img" type="text" placeholder="image url" value={this.state.img} onChange={this.onChangeHandler} />
 				    </label>
 				  </div>
-                  <div className="campus-addform-element">
+                  <div id="dropDownCampus" >
                     <select className="campus-addform-button" name="student" onChange={this.handleSelection}>
                       <option>Select student...</option>
                       {this.props.students.filter(student => (student.campusId != this.props.campus.id)).map((student) => (
                         <option value={student.id}>{student.name}</option>
                       ))}
                     </select>
+                    </div>
 				    <button className="campus-addform-button">Save Changes</button>
-				  </div>
+				  
                 </form>
                 <div className="campus-addform-label color-red">
                 	<div>
@@ -215,6 +208,7 @@ class EditCampus extends Component {
                 <div>
                     <EditCampusStudentGrid students={this.props.students.filter(student => (student.campusId == this.props.campus.id))} />
                 </div>
+            </div>
             </div>
         )
     }

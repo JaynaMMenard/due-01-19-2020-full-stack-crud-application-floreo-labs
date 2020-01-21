@@ -38,7 +38,7 @@ class App extends React.Component{
     }
     
     async getStudents(){
-        await axios.get('http://localhost:5000/api/students')
+        await axios.get('http://localhost:3001/api/students')
         .then (response => {
                let result = response.data;
                for (let i = 0; i < result.length; i++){
@@ -49,7 +49,7 @@ class App extends React.Component{
     }
     
     async getCampuses(){
-        await axios.get('http://localhost:5000/api/campuses')
+        await axios.get('http://localhost:3001/api/campuses')
         .then (response => {
                let result = response.data;
                for (let i = 0; i < result.length; i++){
@@ -147,7 +147,7 @@ class App extends React.Component{
 }
 
 const getStateToProps = (state) => {
-	// from redux to props
+
 	return {
     campuses: state.campuses,
     students: state.students

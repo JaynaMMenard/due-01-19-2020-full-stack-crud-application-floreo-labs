@@ -1,37 +1,61 @@
-.navbar {
-    height: 60px;
-    background-color: #666;
-}
 
-.nav-title {
-    display: inline-block;
-    padding: 0 30px 0 50px;
-    margin: 14px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
     text-decoration: none;
-    font-size: 16pt;
-    font-weight: bold;
-    color: #333;
-	text-shadow: 0px 1px 0px rgba(255,255,255,.5);
-   
-}
-
-.nav-title:hover {
-    background-color:goldenrod;
-    border-radius: 3rem;
-}
-
-.nav-element {
-    font-family:"Century Gothic", "HelveticaNeueLT Pro 45 Lt", sans-serif;  
-    display: inline-block;
-    margin: 14px;
-    text-decoration: none;
-    font-size: 18pt;
-    color: #333;
-	text-shadow: 0px 1px 0px rgba(255,255,255,.5);
-   font-weight: bold;
+    /* font-family: 'Josefin Sans', sans-serif; */
+  }
   
-}
-.nav-element:hover {
-    background-color:goldenrod;
-    border-radius: 3rem;
+ 
+  
+  .navbar{
+   margin-top: -1rem;
+  }
+  
+  .navbar .header{
+    width: 200px;
+    height: 100rem;
+    background: rgba(218,165,32,0.5);
+    padding: 30px 0px;
+    position: fixed;
+   
+    
+  }
+  
+  .navbar .header h2{
+
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .navbar .header ul li{
+    padding: 15px;
+   
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }    
+  
+  .navbar .header ul li :link{
+    color: black;
+    display: block;
+  }
+  
+  
+  
+  .navbar .header ul li:hover{
+    background-color: black;
+  }
+      
+  .navbar .header ul li:hover a{
+    color: #fff;
+  }
+ 
+  
+
+.nav-element{
+  color: black;
 }

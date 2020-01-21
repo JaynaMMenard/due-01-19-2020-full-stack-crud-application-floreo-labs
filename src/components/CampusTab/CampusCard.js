@@ -12,7 +12,7 @@ class CampusCard extends React.Component {
 	}
 
 	async removeCampus() {
-    let url = 'http://localhost:5000/api/campuses/' + this.props.campus.id;
+    let url = 'http://localhost:3001/api/campuses/' + this.props.campus.id;
     console.log(url);
     console.log(this.props.campus);
     await axios.delete(url)

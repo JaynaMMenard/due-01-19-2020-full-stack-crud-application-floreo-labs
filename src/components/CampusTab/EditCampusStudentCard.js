@@ -5,6 +5,7 @@ import {connect} from "react-redux";
 import {Redirect} from "react-router";
 import axios from 'axios';
 
+
 class EditCampusStudentCard extends Component{
 	constructor(props) {
 	    super(props);
@@ -15,7 +16,7 @@ class EditCampusStudentCard extends Component{
 	}
 
 	async removeStudentFromCampus(student) {
-			let url ='http://localhost:5000/api/students/' + this.props.student.id;
+			let url ='http://localhost:3001/api/students/' + this.props.student.id;
             await axios.put(url,{
 				name: this.props.student.name,
 				img: this.props.student.img,

@@ -1,14 +1,18 @@
 
+.student-nav{
+  height: 100%;
+  margin-top: 1rem;
+}
 .student-nav-element {
-  
-    margin-top: 15rem;
+   
     color: goldenrod;
     text-decoration: none;
     font-size: 20pt;
     font-weight: bold;
-    float: right;
-    margin-right: 30rem;
-    padding: 0 1px;
+    margin-left: 80rem;
+   
+
+   
 }
 .student-nav-element:hover {
   background-color: goldenrod;
@@ -16,4 +20,10 @@
   border-radius: 0.5rem;
 }
 
+#bg_2{
+  width: 300vh;
+  height:150vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../assets/sepia.jpg");
+  /* background: url("../../assets/sepia.jpg")no-repeat center center/cover fixed; */
+}
 

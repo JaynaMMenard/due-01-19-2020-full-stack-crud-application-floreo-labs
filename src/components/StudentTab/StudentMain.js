@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 class StudentMain extends Component {
     render() {
         return (
-                <div>
+                <div id="bg_2">
                     <div className="student-main">
                         <div className="student-nav">
                            

@@ -5,9 +5,7 @@ class CampusStudentGrid extends Component{
 
 	render(){
 		return (
-			<div className="studentsPage">
-				<div className="studentGridTop">
-				</div>
+			<div className="studentsPages">
 				<div className="studentGridView">
 					{this.props.students.map(singleStudent => (
 						<EditCampusStudentCard student={singleStudent}/>

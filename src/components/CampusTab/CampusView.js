@@ -33,13 +33,10 @@ class CampusView extends Component {
                   <div className="campusview-bio">{this.props.campus_chosen.bio}</div>
                 </div>
               </div>
-              <div className="campusview-actionbar">
-                <div className="campusview-address">{this.props.campus_chosen.address}</div>
-                <div className="campusview-actions">
-                  <Link to={this.props.campus_chosen.id + "/edit"}><button className="campusview-buttons">edit</button></Link>
-                  <button className="campusview-buttons btn-remove" onClick={() => this.removeCampus_(campus)}>remove</button>
-                </div>
-              </div>
+              
+                  <Link to={this.props.campus_chosen.id + "/edit"}><button className="campusview-button">Edit</button></Link>
+                  <button className="campusview-button btn-remove" onClick={() => this.removeCampus_(campus)}>remove</button>
+               
               <div className="campusview-students">
                 <div className="campusview-title studentgrid-title"></div>
               <StudentGrid className="studentgrid" students={this.props.students}/>

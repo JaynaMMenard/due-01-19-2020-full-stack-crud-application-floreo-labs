@@ -34,7 +34,7 @@ class StudentView extends Component {
         await this.setState({
             redirect: true
         })
-        let url = 'http://localhost:5000/api/students/' + student.id;
+        let url = 'http://localhost:3001/api/students/' + student.id;
         console.log(student.id);
         await axios.delete(url)
         .then(res => {
@@ -64,7 +64,7 @@ class StudentView extends Component {
             let newStudent = this.state.student;
             newStudent.campusId = newCampus;
 
-            let url ='http://localhost:5000/api/students/' + newStudent.id;
+            let url ='http://localhost:3001/api/students/' + newStudent.id;
             await axios.put(url,{
                 name: newStudent.name,
                 gpa : newStudent.gpa,
@@ -72,7 +72,7 @@ class StudentView extends Component {
                 campus: newStudent.campusId
             })
             .then (res => {
-                //let singleStudent = res.body
+                
                 console.log('updated')
                 this.props.editStudent(newStudent);
             })
@@ -96,6 +96,7 @@ class StudentView extends Component {
         }
 
         return (
+            <div id="SViewBg">
             <div className="StudentView">
               <div className="studentview-main">
                 <img className="studentview-img" src={this.props.student_chosen.img} />
@@ -106,8 +107,7 @@ class StudentView extends Component {
               </div>
               <div className="studentview-actionbar">
                 <div className="studentview-actions">
-                  {/* <Link to={"/students/" + this.props.student_id + "/edit"}><button className="studentview-buttons">edit</button></Link>
-                  <button className="campusview-buttons btn-remove" onClick={() => this.removeStudent(this.state.student)}>remove</button> */}
+                 
                 </div>
               </div>
             <div className="campusbar">
@@ -128,9 +128,10 @@ class StudentView extends Component {
                                 <option>{campus.name}</option>
                             ))}
                         </select>
-                        <button className="studentview-buttons" onClick={this.changeCampus}>Save Changes</button>
+                        <button className="studentview-button" onClick={this.changeCampus}>Save Changes</button>
                     </div>
                 </div>
+            </div>
             </div>
             )
     }

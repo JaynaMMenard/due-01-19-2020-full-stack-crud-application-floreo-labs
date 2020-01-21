@@ -15,7 +15,7 @@ class StudentCard extends Component{
 				return this.props.campuses[i].name
 			}
 		}
-		return "undefined"
+		return "Not Enrolled"
 	}
 
 	render(){
