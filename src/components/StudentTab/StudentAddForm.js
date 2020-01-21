@@ -32,7 +32,7 @@ class StudentAddForm extends Component {
         if (correctName){
             let student = {
                 name: e.target.elements.name.value,
-                img: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49320/preview.svg'
+                img: 'https://cdn.clipart.email/42b3cff195bae2ab6651a95e5ef276fd_harry-potter-clipart-group-68-_300-300.jpeg'
             }
             let url ='http://localhost:3001/api/students';
             await axios.post(url,{
