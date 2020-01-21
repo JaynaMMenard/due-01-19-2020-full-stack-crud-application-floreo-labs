@@ -1,0 +1,83 @@
+.CampusCard {
+    margin-top: -50px;
+    width: 160px;
+    padding: 10px;
+    width: 495px;
+    /* text-align: center; */
+    margin-left: 32%;
+    flex-direction: row;
+}
+
+.campus-card-img {
+    margin-top: 100px;
+    height: 150px;
+    width: 200px;
+}
+
+.campus-card-info {
+    background:linear-gradient(rgba(32, 56, 94, 0.5)rgba(32, 56, 94, 0.5));
+    width: 150px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.campus-card-title {
+    margin-left: 35px;
+    color: goldenrod;
+    text-decoration: none;
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.campus-card-title:hover {
+    background-color: goldenrod;
+    color: black;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.campus-card-element {
+    display: flex;
+    margin-top: -100px;
+    margin-left: 320px;
+ 
+
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 15pt;
+}
+.campus-card-button:hover {
+    background-color:darkgreen;
+    border-radius: 3rem;
+   
+}
+.campus-card-button {
+    background: rgba(236, 244, 255, 0);
+    color: goldenrod;
+    border: none;
+    text-decoration: none;
+    text-shadow: 1px 1px rgba(132, 162, 207, 0.2);
+    font-size: 10pt;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.btn-remove{
+    text-decoration: none;
+    text-shadow: 1px 1px rgba(182, 89, 89, 0.2);
+}
+
+.btn-remove:hover{
+    background-color:darkred;
+    border-radius: 0.5rem;
+}
+#students{
+    margin-left: 45px;
+    color: goldenrod;
+}
+
+
+
