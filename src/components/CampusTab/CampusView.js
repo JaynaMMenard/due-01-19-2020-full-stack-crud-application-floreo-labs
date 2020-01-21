@@ -25,6 +25,7 @@ class CampusView extends Component {
         }
         
         return (
+            <div id="CViewBg">
             <div className="CampusView">
               <div className="campusview-main">
                 <img className="campusview-img" src={this.props.campus_chosen.img} />
@@ -41,6 +42,7 @@ class CampusView extends Component {
                 <div className="campusview-title studentgrid-title"></div>
               <StudentGrid className="studentgrid" students={this.props.students}/>
               </div>
+            </div>
             </div>
         )
     }

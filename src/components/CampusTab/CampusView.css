@@ -49,21 +49,6 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-/* .campusview-actionbar {
-    margin: 0 20px;
-    height: 50px;
-    width: 640px;
- 
-} */
-
-
-
-/* .campusview-actions {
-    margin: 10px 30px;
-    display: inline-block;
-    float: left;
-} */
-
 .campusview-button {
   margin-left: 28rem;
     background-color: #000;
@@ -83,15 +68,6 @@
     border-radius: 0.5rem;
 }
 
-/* .campusview-students {
-    width: 640px;
-    background: rgba(29, 37, 49, 0.5);
-    margin: 20px 20px 0 20px;
-    padding-top: 5px;
+#CViewBg{
+background: url("../../assets/home2.jpg") no-repeat center center/cover fixed;
 }
-
-.studentgrid-title {
-    margin: 10px 20px 0 20px;
-    text-decoration: none;
-} */
-
